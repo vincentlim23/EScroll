@@ -162,12 +162,10 @@
     <string name="btn_revoke_access">Revoke Access</string>
 
 
-    <!-- <string name="server_client_id">470268360888-e276fidial22gh6ilgjk94ilcf5a6rd2.apps.googleusercontent.com</string> -->
-    <string name="server_client_id">263134231654-glrhispbmlj7bqhiorg6ecb11koh10ln.apps.googleusercontent.com</string>
-    <string name="google_app_id">263134231654 </string>
+   
     <string name="loading">Loading…</string>
 
-    <string name="footertext">Copyright © 2016 IRIS Corporation Berhad.</string>
+   
 
 
 
