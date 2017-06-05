@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_weight="1"
+    android:background="@drawable/bluesky"
+    android:id="@+id/layoutdashboardfragment"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:id="@+id/tv_checklogin"
+        android:layout_gravity="right|top"
+        android:background="@android:color/transparent"
+        android:visibility="visible"
+        android:textSize="25dp"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.25"
+        android:layout_marginTop="50dp"
+        android:layout_centerInParent="true">
+
+        <Button
+            android:id="@+id/btn_scan_logo"
+            style="@style/DashboardButton"
+            android:drawableTop="@drawable/qrlogotransparent"
+            android:text="QR Scan"
+            android:focusable="false"
+            android:layout_gravity="center"
+            android:layout_alignTop="@+id/btn_profile_logo"
+            android:layout_toEndOf="@+id/btn_history_logo" />
+
+        <Button
+            android:id="@+id/btn_profile_logo"
+            style="@style/DashboardButton"
+            android:drawableTop="@drawable/user_infosmall"
+            android:text="Profile"
+            android:focusable="false"
+            android:layout_gravity="center"
+            android:layout_marginTop="65dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="49dp" />
+
+        <Button
+            android:id="@+id/btn_history_logo"
+            style="@style/DashboardButton"
+            android:drawableTop="@drawable/history"
+            android:text="History"
+            android:focusable="true"
+            android:layout_gravity="center"
+            android:layout_marginRight="30dp"
+            android:layout_below="@+id/btn_profile_logo"
+            android:layout_alignStart="@+id/btn_profile_logo"
+            android:layout_marginTop="69dp" />
+
+        <Button
+            android:id="@+id/btn_feedback_logo"
+            style="@style/DashboardButton"
+            android:drawableTop="@drawable/feedback"
+            android:text="Feedback"
+            android:focusable="true"
+            android:layout_gravity="center"
+            android:layout_alignTop="@+id/btn_history_logo"
+            android:layout_alignStart="@+id/btn_scan_logo" />
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

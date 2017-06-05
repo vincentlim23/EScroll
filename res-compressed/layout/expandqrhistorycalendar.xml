@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bluesky">
+
+    <TextView
+        android:id="@+id/main_YYMM_Tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:padding="20dp"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:background="@drawable/border_calendar"
+        android:text="----Year-Month" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#ccc" />
+
+    <sun.bob.mcalendarview.views.ExpCalendarView
+
+        android:id="@+id/calendar_exp"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+
+        />
+
+    <ImageView
+        android:id="@+id/main_expandIV"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/icon_arrow_up" />
+
+    <TableRow
+        android:id="@+id/tableRowTitle"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/TextViewDateSelected"
+            android:text="Date Selected"
+            android:textSize="20dp"
+            android:background="@drawable/border_calendar"
+            android:padding="10dip"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:gravity="start" />
+    </TableRow>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/listViewCalendar" />
+
+</LinearLayout>
+
+    <!-- android:background="#33b5e5"-->

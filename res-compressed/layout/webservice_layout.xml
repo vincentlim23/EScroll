@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bluesky">
+
+    <TextView
+        android:id="@+id/resultfromWS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:background="@drawable/border"
+        android:alpha="0.5"
+        android:gravity="center"
+        android:layout_centerHorizontal="true">
+    </TextView>
+
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="Back to Main Menu"
+        android:id="@+id/button_back_main"
+        android:visibility="visible"
+        android:background="@drawable/border"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/button_view_cert"
+        android:layout_alignStart="@+id/button_view_cert" />
+
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="View Cert"
+        android:id="@+id/button_view_cert"
+        android:visibility="visible"
+        android:background="@drawable/border"
+        android:layout_marginLeft="30dp"
+        android:layout_below="@+id/resultfromWS"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="96dp" />
+
+
+
+
+    <TextView
+
+        android:text="@string/footertext"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:textColor="#606060"
+        android:gravity="center"
+        android:background="@drawable/action_background"
+        android:paddingTop="10dp"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>
